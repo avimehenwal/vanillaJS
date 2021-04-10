@@ -7,13 +7,14 @@
   "author": "avimehenwal <avi.mehanwal@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "js": "tsc --watch",
+    "js": "tsc --project tsconfig.json --watch",
     "pre:build": "./scripts/prepare-docs.sh",
     "css": "stylus --watch ./frontend/styles.styl --out docs",
     "clean": "rm -rfv docs",
     "dev": "yarn clean && yarn pre:build && ./scripts/start-development.sh $(pwd)"
   },
   "devDependencies": {
+    "http-server": "^0.12.3",
     "stylus": "^0.54.8",
     "typescript": "^4.2.4"
   }

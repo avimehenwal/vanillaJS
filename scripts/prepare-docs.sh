@@ -10,9 +10,11 @@
 TARGET="docs"
 [ -d $TARGET ] || mkdir -v $TARGET
 
-while IFS= read -r FILE; do
-  DEST=$(echo $FILE | sed "s/frontend/$TARGET/")
-  [ -f $DEST ] || cp -v $FILE $DEST
-done < <(find . -type f -name "*.html")
+cp -v ./scripts/index.html ./$TARGET/index.html
+
+# while IFS= read -r FILE; do
+#   DEST=$(echo $FILE | sed "s/frontend/$TARGET/")
+#   [ -f $DEST ] || cp -v $FILE $DEST
+# done < <(find . -type f -name "*.html")
 
 # END
