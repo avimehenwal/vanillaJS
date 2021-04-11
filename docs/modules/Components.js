@@ -1,10 +1,14 @@
 import * as atom from './Atoms.js';
-export var LIST = function (collection) {
+import { projects } from './data.js';
+var LIST = function (projects) {
     var ul = atom.UL();
-    for (var key in collection) {
-        var li = atom.LI(collection[key]['title']);
-        li.onclick = collection[key]['cb'];
+    projects.map(function (project) {
+        var li = atom.LI(project['title']);
+        if (project.hasOwnProperty('cb')) {
+            li.onclick = project['cb'];
+        }
         ul.appendChild(li);
-    }
+    });
     return ul;
 };
+export var CIndex = function () { return LIST(projects); };

@@ -1,11 +1,15 @@
 import * as atom from './Atoms.js'
+import { projects } from './data.js'
 
-export let LIST = (collection): HTMLElement => {
+
+let LIST = (projects): HTMLElement => {
   let ul = atom.UL()
-  for (const key in collection) {
-    let li = atom.LI(collection[key]['title'])
-    li.onclick = collection[key]['cb']
+  projects.map((project) => {
+    let li = atom.LI(project['title'])
+    if (project.hasOwnProperty('cb')) { li.onclick = project['cb'] }
     ul.appendChild(li)
-  }
+  })
   return ul
 }
+
+export let CIndex = () => LIST(projects)
