@@ -1,10 +1,16 @@
 // ISSUE: browser script tag src cannot load files without extensions
-import { page, homepage } from './modules/homepage.js'
-import { addScriptAsModuleToBody } from './modules/utility.js'
+import { addScriptAsModuleToBody } from './modules/Utility.js'
+import Homepage from './modules/HomePage.js'
 
-addScriptAsModuleToBody("homepage.js")
-addScriptAsModuleToBody("utility.js")
+addScriptAsModuleToBody("HomePage.js")
+addScriptAsModuleToBody("Utility.js")
+addScriptAsModuleToBody("Components.js")
 
-console.log('loading ...' + page);
 let app = document.getElementById("app")
-app?.appendChild(homepage)
+app?.appendChild(Homepage)
+
+
+// list all modules
+// cannot use fs on client, only works on server
+// const testFolder = './modules/';
+

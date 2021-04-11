@@ -14,6 +14,7 @@
 1. Typescript module is not defined? How to compile all ts files into single bundle?
 2. Uncaught ReferenceError: exports is not defined?
 3. Can't import TypeScript modules without providing the file extension? How to append extension to ts targets?
+4. slash `/` before filenames in HTML script/link tags could be a problem
 
 #### :v: Get in touch with me
 

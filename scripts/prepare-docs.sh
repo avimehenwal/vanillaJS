@@ -10,7 +10,8 @@
 TARGET="docs"
 [ -d $TARGET ] || mkdir -v $TARGET
 
-cp -v ./scripts/index.html ./$TARGET/index.html
+cp -v ./scripts/index.html $TARGET
+cp -v ./scripts/favicon.ico $TARGET
 
 # while IFS= read -r FILE; do
 #   DEST=$(echo $FILE | sed "s/frontend/$TARGET/")
