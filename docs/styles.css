@@ -1,3 +1,93 @@
 h1 {
-  font-size: 5em;
+  font-size: 3em;
+}
+ul {
+  margin: 30px auto;
+}
+ul li {
+  padding: 10px 0;
+  border-bottom: 1px solid #808080;
+  text-align: center;
+  transition: background 0.3s linear, font-weight 0.2s linear, color 0.3s linear;
+  -webkit-transition: background 0.3s linear, font-weight 0.2s linear, color 0.3s linear;
+  -moz-transition: background 0.3s ease, font-weight 0.2s linear, color 0.3s linear;
+  -o-transition: background 0.3s linear, font-weight 0.2s linear, color 0.3s linear;
+  -ms-transition: background 0.3s linear, font-weight 0.2s linear, color 0.3s linear;
+}
+ul li:hover {
+  background: #d3d3d3;
+}
+#main {
+  -webkit-animation: fadeIn 1000ms;
+  -moz-animation: fadeIn 1000ms;
+  animation: fadeIn 1000ms;
+}
+#main.removing {
+  -webkit-animation: fadeOut 1000ms;
+  -moz-animation: fadeOut 1000ms;
+  animation: fadeOut 1000ms;
+}
+@-moz-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-o-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-moz-keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+@-webkit-keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+@-o-keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
 }

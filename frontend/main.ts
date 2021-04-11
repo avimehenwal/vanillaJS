@@ -1,18 +1,38 @@
 // ISSUE: browser script tag src cannot load files without extensions
-import { addScriptAsModuleToBody } from './modules/Utility.js'
-import { CHeader, LIST } from './modules/Components.js'
+import { addScriptAsModuleToBody, updateMainView } from './modules/Utility.js'
+import { LIST } from './modules/Components.js'
 import { MAIN, FOOTER, ASIDE, NAV } from './modules/Atoms.js'
 import { projects } from './data/projectList.js'
+import * as atom from './modules/Atoms.js'
 
-addScriptAsModuleToBody("HomePage.js")
+addScriptAsModuleToBody("VP1.js")
 addScriptAsModuleToBody("Utility.js")
 addScriptAsModuleToBody("Components.js")
 
-let app = document.getElementById("app")
+export let VIndex = () => {
+  // @ts-ignore */
+  let main = document.getElementById('main')
+  // @ts-ignore */
+  main?.innerHTML = ''
+  // @ts-ignore */
+  main.appendChild(LIST(projects))
+}
 
+export let CHeader = (text: string): HTMLElement => {
+  // let headerComponent = new DocumentFragment()
+  let header = document.createElement('header')
+  header.id = 'index'
+  header.appendChild(atom.H1(text))
+  return header
+}
+
+
+let app = document.getElementById("app")
 let pd = {
   title: 'Index Page'
 }
+
+// doesnt need window.onload with SPA, page is already loaded
 
 // semantic HTML page structure
 let webAppContainer = document.createElement('div')
@@ -24,10 +44,11 @@ webAppContainer.appendChild(FOOTER('footer for ' + pd.title))
 
 // app?.appendChild(Homepage)
 app?.appendChild(webAppContainer)
+VIndex()
+let header = document.getElementById('index')
+console.log(header)
+// @ts-ignore * /
+header?.onclick = () => VIndex()
 
 // generate index
-// return Node List and not Element
-let main = document.getElementsByTagName('main')[0]
-let list_html = LIST(projects)
-// console.log(list_html);
-main.appendChild(list_html)
+// return Node List and not HTMLElement

@@ -1,2 +1,42 @@
+build-in-time = 1000ms
+
 h1
-  font-size 5em
+  font-size 3em
+
+// hove effects on list
+ul
+  // width: 60vh;
+  margin: 30px auto;
+  li
+    padding: 10px 0;
+    border-bottom: 1px solid grey;
+    text-align: center;
+    transition: background 0.3s linear, font-weight 0.2s linear, color 0.3s linear;
+    -webkit-transition: background 0.3s linear, font-weight 0.2s linear, color 0.3s linear;
+    -moz-transition: background 0.3s ease, font-weight 0.2s linear, color 0.3s linear;
+    -o-transition: background 0.3s linear, font-weight 0.2s linear, color 0.3s linear;
+    -ms-transition: background 0.3s linear, font-weight 0.2s linear, color 0.3s linear;
+  li:hover
+  // margin-left: 20px;
+  // font-weight: 600;
+  // color: blue;
+    background lightgrey
+
+
+@keyframes fadeIn
+  from {opacity:0}
+  to {opacity:1}
+
+@keyframes fadeOut
+  from {opacity:1}
+  to {opacity:0}
+
+#main
+  -webkit-animation: fadeIn build-in-time;
+  -moz-animation: fadeIn build-in-time;
+  animation: fadeIn build-in-time;
+
+  &.removing
+    -webkit-animation: fadeOut build-in-time;
+    -moz-animation: fadeOut build-in-time;
+    animation: fadeOut build-in-time;

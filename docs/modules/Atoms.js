@@ -5,9 +5,15 @@ var CEIT = function (tag, text) {
     element.innerText = text;
     return element;
 };
+var CEID = function (tag, id) {
+    var element = CE(tag);
+    // @ts-ignore */
+    element.id = id;
+    return element;
+};
 export var H1 = function (text) { return CEIT('h1', text); };
 export var FOOTER = function (text) { return CEIT('footer', text); };
-export var MAIN = function () { return CE('main'); };
+export var MAIN = function () { return CEID('main', 'main'); };
 export var ASIDE = function () { return CE('aside'); };
 export var NAV = function () { return CE('nav'); };
 export var UL = function () { return CE('ul'); };
