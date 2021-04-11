@@ -1,4 +1,5 @@
-import { CHeader, FOOTER } from './Components.js';
+import { CHeader } from './Components.js';
+import { FOOTER } from './Atoms.js';
 // Homepage - Index of project with links
 // use <main> for dominant content
 var pageData = {

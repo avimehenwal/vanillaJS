@@ -1,16 +1,17 @@
-let EL = (elementTag: string, text: string): HTMLElement => {
-  let element = document.createElement(elementTag)
-  element.innerText = text
-  return element
-}
-
-export let H1 = (text: string): HTMLElement => EL('h1', text)
-export let FOOTER = (text: string): HTMLElement => EL('footer', text)
-
+import * as atom from './Atoms.js'
 
 export let CHeader = (text: string): HTMLElement => {
   // let headerComponent = new DocumentFragment()
   let header = document.createElement('header')
-  header.appendChild(H1(text))
+  header.appendChild(atom.H1(text))
   return header
+}
+
+export let LIST = (collection): HTMLElement => {
+  let ul = atom.UL()
+  for (const key in collection) {
+    let li = atom.LI(collection[key]['title'])
+    ul.appendChild(li)
+  }
+  return ul
 }

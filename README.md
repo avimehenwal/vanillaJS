@@ -7,7 +7,10 @@
 
 [Inspired from Jeniffer Dewalt's work](https://jenniferdewalt.com/index.html)
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/GG1fgCHvDNQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+## Ideas
+
+- [100 days 100 projects](https://www.florin-pop.com/blog/2019/09/100-days-100-projects/)
+- [open sourced on github](https://github.com/search?l=JavaScript&q=100daysofcode&type=Repositories)
 
 ## Issues
 
