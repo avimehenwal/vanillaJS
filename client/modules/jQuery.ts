@@ -5,7 +5,7 @@ export function $(selector) {
   const self = {
     // DOM Manipulation
     element: document.querySelector(selector),
-    html: () => self.element,
+    html: (blob) => { self.element.innerHTML = blob },
     attr: (name, value) => {
       if (value == null)
         return self.element.getAttribute(name)

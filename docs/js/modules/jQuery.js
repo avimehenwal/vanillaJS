@@ -4,7 +4,7 @@ export function $(selector) {
     var self = {
         // DOM Manipulation
         element: document.querySelector(selector),
-        html: function () { return self.element; },
+        html: function (blob) { self.element.innerHTML = blob; },
         attr: function (name, value) {
             if (value == null)
                 return self.element.getAttribute(name);

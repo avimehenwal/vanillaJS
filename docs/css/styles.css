@@ -49,6 +49,33 @@ ul li:hover {
   grid-area: 4/1/4/-1;
   background-color: #ffa500;
 }
+label {
+  padding: 20px 20px 10px 0;
+  display: inline-block;
+  margin-right: 20px;
+}
+button,
+input {
+  cursor: pointer;
+}
+button {
+  padding: 10px;
+  border-radius: 10px;
+  width: 80%;
+  margin-top: 20px;
+}
+.form-container {
+  padding: 20px;
+}
+.form-container form {
+  text-align: center;
+  padding: 1em 1em 2em 1em;
+  background-color: #f2f2f2;
+  border-radius: 5px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+}
 @-moz-keyframes fadeIn {
   from {
     opacity: 0;
