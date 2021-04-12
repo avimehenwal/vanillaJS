@@ -56,3 +56,7 @@
 - use [Template Literals](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals) in innerHTML to inject new HTML
   - tag`string text ${expression} string text`
 - [javascript === strict equality operator vs abstract equality operator ==](https://stackoverflow.com/questions/359494/which-equals-operator-vs-should-be-used-in-javascript-comparisons)
+
+## Day 5
+
+- Pass entire dataStructure to function, keep track of your mutation

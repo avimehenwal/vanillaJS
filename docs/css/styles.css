@@ -76,6 +76,22 @@ button {
   margin-right: auto;
   width: 40%;
 }
+#validations {
+  margin-top: 1.5em;
+}
+#validations li {
+  padding: 0.5em 0.5em 0.5em 0.5em;
+  list-style-type: none;
+}
+#validations .red {
+  background-color: #ffd1d8;
+}
+#validations .green {
+  background-color: #b4f0b4;
+}
+table {
+  position: relative;
+}
 @-moz-keyframes fadeIn {
   from {
     opacity: 0;
