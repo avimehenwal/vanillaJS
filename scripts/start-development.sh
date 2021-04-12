@@ -12,8 +12,8 @@ SESSION="vanillaJS"
 MAIN="hactavismInProgress"
 SLEEP="sleep 25"
 CSS="find ./library -type f -newermt '2 seconds ago' -print -exec cp -v .dist"
-WATCH_CSS="yarn run css"
-WATCH_JS="yarn run js"
+WATCH_CSS="yarn run css --watch"
+WATCH_JS="yarn run js:w"
 WEB_SERVER="http-server docs"
 
 kill_tmux() {

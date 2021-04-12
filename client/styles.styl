@@ -1,17 +1,18 @@
 build-in-time = 1000ms
 
-h1
-  font-size 3em
+.header h1
+footer
   text-align center
 
 // hove effects on list
 ul
   // width: 60vh;
-  margin: 30px auto;
+  // margin: 1px auto;
   li
     padding: 10px 0;
-    border-bottom: 1px solid grey;
-    text-align: center;
+    // padding-left 20px
+    // border-left: 2px solid grey;
+    // text-align: center;
     transition: background 0.3s linear, font-weight 0.2s linear, color 0.3s linear;
     -webkit-transition: background 0.3s linear, font-weight 0.2s linear, color 0.3s linear;
     -moz-transition: background 0.3s ease, font-weight 0.2s linear, color 0.3s linear;
@@ -41,3 +42,33 @@ ul
     -webkit-animation: fadeOut build-in-time;
     -moz-animation: fadeOut build-in-time;
     animation: fadeOut build-in-time;
+
+.page-grid
+  height 100vh
+  display grid
+  grid-template-columns: 200px auto
+  grid-template-rows: 10% 1% 84% 5%
+  // justify-content center
+  // align-content center
+
+.header
+  background-color yellow
+  grid-area: 1 / 1 / 1 / -1
+
+.menu
+  background-color grey
+  grid-area: 2 / 1 / 2 / -1
+
+#aside
+  grid-area: 3 / 1 / 3 / span 1
+  background-color lightgreen
+
+.main
+  grid-area: 3 / 2 / 3 / -1
+  background-color lightblue
+
+.footer
+  grid-area: 4 / 1 / 4 / -1
+  background-color orange
+
+
