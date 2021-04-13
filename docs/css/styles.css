@@ -92,6 +92,12 @@ button {
 table {
   position: relative;
 }
+.newspaper {
+  width: 500px;
+  margin: auto;
+  background: #d3d3d3;
+  padding: 15px;
+}
 @-moz-keyframes fadeIn {
   from {
     opacity: 0;

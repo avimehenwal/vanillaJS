@@ -60,3 +60,4 @@
 ## Day 5
 
 - Pass entire dataStructure to function, keep track of your mutation
+- [diff b/w map and forEach on sequences?](https://codeburst.io/javascript-map-vs-foreach-f38111822c0f)

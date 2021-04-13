@@ -8,15 +8,15 @@ let state = {
   clickCount: 0,
   projects: [
     {
-      "title": "Project One",
+      "title": "vanilla JS SPA",
       "cb": () => updateMainView(VP1)
     },
     {
-      "title": "Project Two",
-      "cb": () => updateMainView(VP1)
+      "title": "News article like margin",
+      "href": "html/project2.html"
     },
     {
-      "title": "Project Three",
+      "title": "Interactive Validations",
       "href": "html/project3.html"
     },
   ]
