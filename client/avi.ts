@@ -19,6 +19,10 @@ let state = {
       "title": "Interactive Validations",
       "href": "html/project3.html"
     },
+    {
+      "title": "Interactive FizzBUzz",
+      "href": "html/fizzBuzz.html"
+    },
   ]
 }
 

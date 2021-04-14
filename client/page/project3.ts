@@ -1,4 +1,4 @@
-import { $ } from './modules/jQuery.js'
+import { $ } from '../modules/jQuery.js'
 
 let form = `
 <div class=form-container>

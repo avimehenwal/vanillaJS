@@ -98,6 +98,21 @@ table {
   background: #d3d3d3;
   padding: 15px;
 }
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  text-align: center;
+}
+.grid .Fizz {
+  font-weight: bold;
+}
+.grid .Buzz {
+  font-weight: bold;
+}
+.grid .FizzBuzz {
+  font-weight: bold;
+}
 @-moz-keyframes fadeIn {
   from {
     opacity: 0;
