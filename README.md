@@ -19,6 +19,10 @@
 3. Can't import TypeScript modules without providing the file extension? How to append extension to ts targets?
 4. slash `/` before filenames in HTML script/link tags could be a problem
 
+### Resources
+
+- https://developer.mozilla.org/en-US/docs/Web/API/HTML_Drag_and_Drop_API
+
 #### :v: Get in touch with me
 
 > I am looking for Jobs ... :sunglasses:

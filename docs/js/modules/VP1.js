@@ -31,3 +31,4 @@ export var VP1 = function () {
     return container;
 };
 // $("input[name=name]").on('change', (event) => emailValidationRules(event))
+//# sourceMappingURL=VP1.js.map

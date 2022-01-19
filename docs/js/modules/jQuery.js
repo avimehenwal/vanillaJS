@@ -33,3 +33,4 @@ export function $(selector) {
 // $('h3').on('click', function () {
 //   alert("I was clicked")
 // })
+//# sourceMappingURL=jQuery.js.map

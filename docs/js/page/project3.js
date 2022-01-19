@@ -74,3 +74,4 @@ var emailValidationData = [
     { rid: 2, name: 'email has at least one . symbol', status: false },
     { rid: 3, name: 'email is atleast 4 characters long', status: false },
 ];
+//# sourceMappingURL=project3.js.map

@@ -23,6 +23,10 @@ let state = {
       "title": "Interactive FizzBUzz",
       "href": "html/fizzBuzz.html"
     },
+    {
+      "title": "Drag and Drop",
+      "href": "html/drag-n-drop.html"
+    },
   ]
 }
 

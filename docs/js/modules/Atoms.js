@@ -56,3 +56,4 @@ export var INPUT = function (attributes) {
     }
     return element;
 };
+//# sourceMappingURL=Atoms.js.map

@@ -21,6 +21,10 @@ var state = {
             "title": "Interactive FizzBUzz",
             "href": "html/fizzBuzz.html"
         },
+        {
+            "title": "Drag and Drop",
+            "href": "html/drag-n-drop.html"
+        },
     ]
 };
 function updateMainView(ViewMainFn) {
@@ -63,3 +67,4 @@ window.onclick = function (e) {
     state.clickCount += 1;
     $('#footer').text('Tracking #clicks : ' + state.clickCount);
 };
+//# sourceMappingURL=avi.js.map

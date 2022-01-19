@@ -5,3 +5,4 @@ export function addScriptAsModuleToBody(srcFileName) {
     document.body.appendChild(scriptTag);
     return scriptTag;
 }
+//# sourceMappingURL=Utility.js.map
